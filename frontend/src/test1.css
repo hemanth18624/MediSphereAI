@@ -1,0 +1,175 @@
+/* General Styles */
+
+
+
+
+
+
+
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    display : flex;
+    flex-direction: column;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  .btn-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .search-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .search-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Map Styling */
+  .map-container {
+    height: 400px;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .leaflet-map {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Popup Styling */
+  .popup-content {
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .hospital-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #34495e;
+  }
+  
+  .hospital-address,
+  .hospital-distance,
+  .hospital-phone {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  .phone-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .phone-link:hover {
+    text-decoration: underline;
+  }
+  
+  .availability {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .beds {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #27ae60;
+  }
+  
+  /* Directions Button */
+  .directions-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .directions-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Hospital List */
+  .hospital-list {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .hospital-list h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .hospitals-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .hospital-item {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .hospital-info {
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .btn-list {
+      flex-direction: column;
+    }
+  
+    .search-btn {
+      width: 100%;
+    }
+  
+    .hospitals-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  

@@ -1,0 +1,147 @@
+.option-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #d0eaff 0%, #f0f8ff 100%);
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .option-header {
+    text-align: center;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+    width: 100%;
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  .option-header h1 {
+    font-size: 3rem;
+    color: #004e8c;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .option-tagline {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .options-section {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .option-card {
+    background: linear-gradient(145deg, #e0f0ff, #c0e0ff);
+    border-radius: 20px;
+    padding: 2.5rem;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 78, 140, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .option-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 78, 140, 0.3);
+  }
+  
+  .option-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .option-card h3 {
+    color: #004e8c;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .option-card p {
+    color: #444;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+  
+  .option-button {
+    background: linear-gradient(135deg, #008cdd 0%, #0056b3 100%);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 78, 140, 0.2);
+    width: 100%;
+  }
+  
+  .option-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 78, 140, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .option-container {
+      padding: 1rem;
+    }
+  
+    .option-header {
+      padding: 2rem 0;
+    }
+  
+    .option-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .option-tagline {
+      font-size: 1.3rem;
+    }
+  
+    .options-section {
+      gap: 2rem;
+    }
+  
+    .option-card {
+      width: 100%;
+      max-width: 320px;
+      padding: 2rem;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

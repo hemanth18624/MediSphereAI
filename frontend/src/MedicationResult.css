@@ -1,0 +1,65 @@
+.medication-result-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #f5f9ff, #e8f1ff);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .medication-title {
+    color: #2c5282;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid #bee3f8;
+    padding-bottom: 0.5rem;
+  }
+  
+  .medication-section {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .section-title {
+    color: #3182ce;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .medicine-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .medicine-item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #f7faff;
+    border-radius: 6px;
+    border-left: 4px solid #63b3ed;
+  }
+  
+  .medicine-item strong {
+    color: #2b6cb0;
+    margin-right: 0.5rem;
+  }
+  
+  .no-medicines {
+    color: #718096;
+    font-style: italic;
+  }
+  
+  .suggestion-text {
+    line-height: 1.6;
+    color: #4a5568;
+    margin: 0.5rem 0;
+  }
+  
+  .suggestion-text strong {
+    color: #2b6cb0;
+    margin-right: 0.5rem;
+  }

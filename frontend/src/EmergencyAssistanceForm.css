@@ -1,0 +1,105 @@
+/* Light Blue Glossy Theme with Centered Form & Proper Gaps */
+
+body {
+    background: linear-gradient(135deg, #d8f0ff 0%, #b0e0ff 100%);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  /* Centered Form */
+  .emergency-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 91, 150, 0.2);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .emergency-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 91, 150, 0.3);
+  }
+  
+  /* Form Heading */
+  .emergency-header h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Box with Proper Gaps */
+  .emergency-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Ensures spacing between input fields */
+  }
+  
+  /* Form Group */
+  .emergency-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.5rem; /* Space between label and input */
+  }
+  
+  /* Input Fields */
+  .emergency-group input,
+  .emergency-group select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    box-shadow: inset 2px 2px 5px rgba(0, 91, 150, 0.2);
+  }
+  
+  .emergency-group input:focus,
+  .emergency-group select:focus {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: inset 3px 3px 8px rgba(0, 91, 150, 0.3);
+  }
+  
+  /* Submit Button */
+  .emergency-submit-btn {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 91, 150, 0.3);
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .emergency-submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 91, 150, 0.4);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .emergency-container {
+      width: 90%;
+      padding: 2rem;
+    }
+  
+    .emergency-header h2 {
+      font-size: 1.8rem;
+    }
+  }
+  

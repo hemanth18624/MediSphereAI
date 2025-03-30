@@ -1,0 +1,129 @@
+.qr-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e6f3ff 0%, #ffffff 100%);
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .qr-header {
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+  }
+  
+  .qr-header h1 {
+    font-size: 2.5rem;
+    color: #005b96;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .qr-tagline {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 2rem;
+  }
+  
+  .qr-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 91, 150, 0.1);
+  }
+  
+  .qr-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    color: #005b96;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+  }
+  
+  .submit-button,
+  .download-button {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 91, 150, 0.2);
+    align-self: center;
+    margin-top: 1rem;
+  }
+  
+  .submit-button:hover,
+  .download-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 91, 150, 0.3);
+  }
+  
+  .qr-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+  }
+  
+  .qr-result canvas {
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .qr-container {
+      padding: 1rem;
+    }
+  
+    .qr-header h1 {
+      font-size: 2rem;
+    }
+  
+    .qr-content {
+      padding: 1rem;
+    }
+  
+    .form-grid {
+      grid-template-columns: 1fr;
+    }
+  } 

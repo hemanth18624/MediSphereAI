@@ -1,0 +1,167 @@
+/* Light Blue Glossy Theme with Smooth Animations */
+body {
+    background: linear-gradient(135deg, #d8f0ff 0%, #b0e0ff 100%);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  /* Centered Result Box */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Glossy Result Box */
+  .result-box {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 91, 150, 0.2);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  .result-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 91, 150, 0.3);
+  }
+  
+  /* Title */
+  .title {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Sections */
+  .section {
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Table Styling */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    overflow: hidden;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 1rem;
+  }
+  
+  .table th {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .table tr:nth-child(even) {
+    background: rgba(0, 123, 255, 0.1);
+  }
+  
+  /* No Data Message */
+  .no-data {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+    font-size: 1.1rem;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Recommendations List */
+  .recommendations-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333;
+    font-size: 1rem;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  /* Button Container */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Glossy Button */
+  .home-button {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 91, 150, 0.3);
+  }
+  
+  .home-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 91, 150, 0.4);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .result-box {
+        width: 95%;
+        padding: 1.8rem;
+    }
+  
+    .title {
+        font-size: 1.8rem;
+    }
+  
+    .table th, .table td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+  
+    .home-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+  }
+  
