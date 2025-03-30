@@ -7,27 +7,27 @@ export default function ImageMedicationResult() {
   const { diagnosis } = location.state || {};
 
   if (!diagnosis) {
-    return <div>No diagnosis available.</div>;
+    return <div className="bubble-rainbow">No diagnosis available.</div>;
   }
 
   return (
-    <div>
-      <h2>Medication Result</h2>
-      <div>
-        <h3>Recommended Medicines</h3>
+    <div className="sparkle-container">
+      <h2 className="stormy-title">Medication Result</h2>
+      <div className="cloudy-box">
+        <h3 className="thunder-subtitle">Recommended Medicines</h3>
         {diagnosis.medicinesSuggested && diagnosis.medicinesSuggested.length > 0 ? (
-          <ul>
+          <ul className="rainfall-list">
             {diagnosis.medicinesSuggested.map((medicine, index) => (
-              <li key={index}>
-                <strong>Medicine Name:</strong> {medicine.medicineName} <br />
-                <strong>Type:</strong> {medicine.medicineType} <br /> {/* ✅ Added Medicine Type */}
-                <strong>Dosage:</strong> {medicine.dosage} <br />
-                <strong>Side Effects:</strong> {medicine.sideEffects.length > 0 ? medicine.sideEffects.join(", ") : "None"}
+              <li key={index} className="snowflake-item">
+                <strong className="sunshine-label">Medicine Name:</strong> {medicine.medicineName} <br />
+                <strong className="sunshine-label">Type:</strong> {medicine.medicineType} <br />
+                <strong className="sunshine-label">Dosage:</strong> {medicine.dosage} <br />
+                <strong className="sunshine-label">Side Effects:</strong> {medicine.sideEffects.length > 0 ? medicine.sideEffects.join(", ") : "None"}
               </li>
             ))}
           </ul>
         ) : (
-          <p>No medicines suggested.</p>
+          <p className="windy-message">No medicines suggested.</p>
         )}
       </div>
     </div>
