@@ -74,7 +74,7 @@ MediSphere AI is an AI-powered healthcare web application designed to enhance me
    cd frontend
    ```
    ```bash
-   npm start
+   npm run dev
    ```
 
 ## Usage
