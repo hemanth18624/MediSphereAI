@@ -56,8 +56,8 @@ MediSphere AI is an AI-powered healthcare web application designed to enhance me
 ## Installation Guide
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/MediSphere-AI.git
-   cd MediSphere-AI
+   git clone https://github.com/hemanth18624/MediSphereAI.git
+   cd MediSphereAI
    ```
 2. Install dependencies:
    ```bash
@@ -66,9 +66,13 @@ MediSphere AI is an AI-powered healthcare web application designed to enhance me
 3. Set up environment variables for API keys (Google Gemini AI API, Map API, etc.).
 4. Start the backend server:
    ```bash
-   npm run server
+   npm run dev
    ```
 5. Start the frontend:
+   Navigate to the frontend folder :
+   ```bash
+   cd frontend
+   ```
    ```bash
    npm start
    ```
